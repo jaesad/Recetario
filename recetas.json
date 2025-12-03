@@ -1,0 +1,811 @@
+
+{
+    "Pimientos asados":{
+        "imagen": "/imagenes/pimientos-asados.jpg",
+        "Ingredientes": {
+            "Pimientos rojos": {"Cantidad": 4, "Unidad": "piezas"},
+            "Ajos": {"Cantidad":4, "Unidad": "dientes"},
+            "Cominos": {"Cantidad":1, "Unidad": "cucharadita"},
+            "Vinagre de vino": {"Cantidad":2, "Unidad": "cucharadas"},
+            "Aceite de oliva virgen extra": {"Cantidad":4, "Unidad": "cucharadas"},
+            "Sal": {"Cantidad": "al gusto", "Unidad": ""}
+        },
+        "Instrucciones": [
+            "Precalentar el horno a 200°C.",
+            "Lavar los pimientos y colocarlos en una bandeja para horno.",
+            "Asar los pimientos durante 30 minutos.",
+            "Retirar los pimientos del horno y ponerlos en un plato cubierto con papel albal para que suden.",
+            "Pelar los pimientos, quitar las semillas y cortarlos en tiras.",
+            "Picar los ajos finamente.",
+            "En un bol, mezclar los ajos picados, cominos, vinagre, aceite de oliva y sal.",
+            "Añadir las tiras de pimientos a la mezcla y dejar marinar durante al menos 1 hora antes de servir."
+            ]
+    },
+    "Pimientos Rellenos de carne":{
+        "imagen": "/imagenes/pimientos-rellenos-de-carne.jpg",
+        "Ingredientes": {
+            "Pimientos de piquillo": {"Cantidad": 12, "Unidad": "piezas"},
+            "Carne picada de ternera": {"Cantidad": 500, "Unidad": "gramos"},
+            "Pan rallado": {"Cantidad":100, "Unidad": "gramos"},
+            "Huevo": {"Cantidad":1, "Unidad": "pieza"},
+            "Cebolla": {"Cantidad":1, "Unidad": "pieza"},
+            "Ajo": {"Cantidad":2, "Unidad": "dientes"},
+            "Perejil": {"Cantidad": "al gusto", "Unidad": ""},
+            "Sal": {"Cantidad": "al gusto", "Unidad": ""},
+            "Pimenta": {"Cantidad": "al gusto", "Unidad": ""},            
+            "Aceite de oliva virgen extra": {"Cantidad":2, "Unidad": "cucharadas"},
+            "Tomate triturado": {"Cantidad":400, "Unidad": "gramos"}
+        },
+        "Instrucciones": [
+            "Precalentar el horno a 180°C.",
+            "Picar finamente la cebolla, el ajo y el perejil.",
+            "En un bol grande, mezclar la carne picada, pan rallado, huevo, cebolla, ajo, perejil, sal y pimienta hasta obtener una mezcla homogénea.",
+            "Rellenar cada pimiento de piquillo con la mezcla de carne.",
+            "En una sartén grande, calentar el aceite de oliva y dorar los pimientos rellenos por todos lados.",
+            "Añadir el tomate triturado a la sartén y cocinar a fuego lento durante 15 minutos.",
+            "Colocar los pimientos rellenos en una fuente para horno y verter la salsa de tomate por encima.",
+            "Hornear durante 20 minutos antes de servir."
+            ]    
+    },
+    "Escalivada":{
+        "imagen": "/imagenes/escalivada.jpg",
+        "Ingredientes": {
+            "Berenjena": {"Cantidad": 2, "Unidad": "piezas"},
+            "Pimientos rojos": {"Cantidad": 3, "Unidad": "piezas"},
+            "Cebolla": {"Cantidad":1, "Unidad": "pieza"},
+            "Tomate": {"Cantidad":2, "Unidad": "piezas"},
+            "Aceite de oliva virgen extra": {"Cantidad":4, "Unidad": "cucharadas"},
+            "Vinagre de vino": {"Cantidad":2, "Unidad": "cucharadas"},
+            "Sal": {"Cantidad": "al gusto", "Unidad": ""}
+        },
+        "Instrucciones": [
+            "Precalentar el horno a 200°C.",
+            "Lavar las berenjenas y pimientos. Cortar la cebolla en cuartos y los tomates por la mitad.",
+            "Colocar todas las verduras en una bandeja para horno y asarlas durante 30-40 minutos.",
+            "Retirar las verduras del horno y dejarlas enfriar un poco.",
+            "Pelar las berenjenas y pimientos, quitando las semillas. Cortar todas las verduras en tiras.",
+            "En un bol grande, mezclar las verduras asadas con aceite de oliva, vinagre y sal.",
+            "Dejar reposar durante al menos 30 minutos antes de servir para que los sabores se mezclen."
+            ]    
+    },
+    "Pollo a las hierbas":{
+        "imagen": "/imagenes/pollo-a-las-hierbas.jpg",
+        "Ingredientes": {
+            "Pollo troceado": {"Cantidad": 1, "Unidad": "kg"},
+            "Limones": {"Cantidad":3, "Unidad": "piezas"},
+            "Patatas pequñas": {"Cantidad":500, "Unidad": "gramos"},
+            "Romero": {"Cantidad":1, "Unidad": "cucharadas"},
+            "Oregano": {"Cantidad":1, "Unidad": "cucharadas"},
+            "Aceite de oliva virgen extra": {"Cantidad":4, "Unidad": "cucharadas"},
+            "Sal": {"Cantidad": "al gusto", "Unidad": ""},
+            "Pimienta": {"Cantidad": "al gusto", "Unidad": ""}
+        },
+        "Instrucciones": [
+            "Precalentar el horno a 200°C.",
+            "Lavar y cortar las patatas en trozos medianos.",
+            "En un bol, mezclar el pollo con el romero, orégano, sal, pimienta y aceite de oliva.",
+            "Colocar el pollo con la piel hacia arriba y encima de las patatas en una bandeja para horno.",
+            "Lavar 2 limones y cortarlos en rodajas, colocando las rodajas sobre el pollo.",
+            "Hornear durante 40 minutos.",
+            "Agregar el zumo del limon restante y proseguir la cocción durante 15 minutos más."
+        ]
+    },
+    "Ensalada de arroz y atún":{
+        "imagen": "/imagenes/ensaladadearroz.jpg",
+        "Ingredientes": {
+            "Arroz blanco": {"Cantidad": 1, "Unidad": "Vaso grande"},
+            "Atún en conserva": {"Cantidad":150, "Unidad": "gramos"},            
+            "Aceitunas verdes sin hueso": {"Cantidad":100, "Unidad": "gramos"},
+            "Jamon de pavo en taquitos": {"Cantidad":100, "Unidad": "gramos"},
+            "Mayonesa": {"Cantidad":1, "Unidad": "bote grande"},
+            "pimientos del piquillo en tiras": {"Cantidad":100, "Unidad": "gramos"},
+            "Salsa rosa:": {"Cantidad": "al gusto", "Unidad": ""}
+        },
+        "Instrucciones": [
+            "Cocer el arroz según las instrucciones del paquete y dejar enfriar.",
+            "En un bol grande, mezclar el arroz cocido, atún, aceitunas, jamón de pavo, mayonesa y pimientos del piquillo.",
+            "Mezclar bien todos los ingredientes hasta obtener una mezcla homogénea.",
+            "Refrigerar durante al menos 1 hora antes de servir."
+        ]
+    },
+    "Champiñon al ajillo":{
+        "imagen": "/imagenes/champinonalajillo.jpg",
+        "Ingredientes": {
+            "Champiñones frescos": {"Cantidad": 500, "Unidad": "gramos"},
+            "Ajos": {"Cantidad":4, "Unidad": "dientes"},
+            "Perejil fresco": {"Cantidad":1, "Unidad": "manojo"},
+            "Aceite de oliva virgen extra": {"Cantidad":4, "Unidad": "cucharadas"},
+            "Sal": {"Cantidad": "al gusto", "Unidad": ""},
+            "Pimienta": {"Cantidad": "al gusto", "Unidad": ""}
+        },
+        "Instrucciones": [
+            "Lavar y cortar los champiñones en láminas.",
+            "Picar finamente los ajos y el perejil.",
+            "En una sartén grande, calentar el aceite de oliva a fuego medio.",
+            "Añadir los ajos picados y sofreír hasta que estén dorados.",
+            "Agregar los champiñones a la sartén y cocinar durante 5-7 minutos hasta que estén tiernos.",
+            "Incorporar el perejil picado, sal y pimienta al gusto.",
+            "Mezclar bien y cocinar por 2 minutos más antes de servir."
+        ]
+    },
+    "Muslos de pollo encebollados":{
+        "imagen": "/imagenes/muslosdepolloencebollados.jpg",
+        "Ingredientes": {
+            "Muslos de pollo": {"Cantidad": 12, "Unidad": "piezas"},
+            "Cebollas grandes": {"Cantidad":1, "Unidad": "piezas"},
+            "Ajos": {"Cantidad":3, "Unidad": "dientes"},
+            "Vino blanco": {"Cantidad":"1/2", "Unidad": "vaso"},
+            "Aceite de oliva virgen extra": {"Cantidad":4, "Unidad": "cucharadas"},
+            "Caldo de pollo pastilla": {"Cantidad":1, "Unidad": "pieza"},
+            "Pimienta": {"Cantidad": "al gusto", "Unidad": ""}
+        },
+        "Instrucciones": [
+            "Pelar y cortar las cebollas en aros y los ajos en láminas finas.",
+            "En una sartén grande, calentar el aceite de oliva a fuego medio-alto.",
+            "Añadir los muslos de pollo y dorarlos por todos lados. Retirar y reservar.",
+            "En la misma sartén, añadir las cebollas y ajos, cocinando hasta que estén dorados.",
+            "Agregar el vino blanco y dejar reducir durante 2-3 minutos.",
+            "Disolver la pastilla de caldo de pollo en 1 taza de agua caliente y añadir a la sartén.",
+            "Volver a colocar los muslos de pollo en la sartén, cubrir y cocinar a fuego lento durante 30-40 minutos hasta que el pollo esté tierno."
+        ]
+    },
+    "Cocido madrileño":{
+        "imagen": "/imagenes/cocidomadrileno.jpg",
+        "Ingredientes": {
+            "Garbanzos": {"Cantidad": 3, "Unidad": "tazas"},
+            "Carne de morcillo de ternera": {"Cantidad":500, "Unidad": "gramos"},
+            "Hueso de jamón": {"Cantidad":1, "Unidad": "pieza"},
+            "Chorizo": {"Cantidad":2, "Unidad": "piezas"},
+            "Morcilla": {"Cantidad":2, "Unidad": "piezas"},
+            "Zanahorias": {"Cantidad":2, "Unidad": "piezas"},
+            "Patatas": {"Cantidad":4, "Unidad": "piezas"},
+            "Repollo": {"Cantidad":1, "Unidad": "pieza"},
+            "Fideos finos": {"Cantidad":100, "Unidad": "gramos"},
+            "Agua": {"Cantidad":3, "Unidad": "litros"},
+            "Sal": {"Cantidad": "al gusto", "Unidad": ""},
+            "Hueso de rodilla": {"Cantidad":2, "Unidad": "piezas"}
+        },
+        "Instrucciones": [
+            "Poner los garbanzos en remojo la noche anterior en agua caliente.",
+            "En una olla exprés, añadir todos los ingredientes y los garbanzos en una reda para que no se dispersen.",
+            "Reducir el fuego y cocinar a fuego lento durante 1.5 horas, retirando la espuma que se forme en la superficie.",
+            "Dejar cocer al 2 durante 25 minutos.",
+            "Colar el caldo y devolverlo a la olla. Añadir los fideos finos y cocinar hasta que estén tiernos.",
+            "Servir el caldo con los fideos como primer plato, seguido de la carne y las verduras como segundo plato."
+        ]
+    },
+    "Patatas a capas con salchichas y cebolla":{
+        "imagen": "/imagenes/patatas-con-salchichas.jpg",
+        "Ingredientes": {
+            "Patatas grandes": {"Cantidad": 4, "Unidad": "piezas"},
+            "Cebolla grande": {"Cantidad":1, "Unidad": "pieza"},
+            "Laurel": {"Cantidad":2, "Unidad": "hojas"},
+            "Pimiento verde": {"Cantidad":1, "Unidad": "pieza"},
+            "Tomate triturado": {"Cantidad":800, "Unidad": "gramos"},
+            "Salchichas tipo Frankfurt": {"Cantidad":1, "Unidad": "paquete"},   
+            "Aceite de oliva virgen extra": {"Cantidad":4, "Unidad": "cucharadas"},
+            "Sal": {"Cantidad": "al gusto", "Unidad": ""},
+            "Pimienta": {"Cantidad": "al gusto", "Unidad": ""}
+        },
+        "Instrucciones": [
+            "Pelar y cortar las patatas, la cebolla y el pimiento verde en rodajas.",
+            "En una olla expres poner todo a capas de cebolla, pimientos y patatas. Echar el resto de ingredientes.",
+            "Cocinar durente 10 minutos a partir de que empiece a salir vapor en el 2."
+        ]
+    },
+    "Brocheta de pollo y piña al curry":{
+        "imagen": "/imagenes/brochetasdepolloypinaalcurry.jpeg",
+        "Ingredientes": {
+            "Pechuga de pollo": {"Cantidad": 4, "Unidad": "piezas"},
+            "Piña en su jugo": {"Cantidad":1, "Unidad": "bote"},
+            "Bacon en tacos": {"Cantidad":1, "Unidad": "pieza"},
+            "Curry en polvo": {"Cantidad":2, "Unidad": "cucharaditas"},
+            "Aceite de oliva virgen extra": {"Cantidad":4, "Unidad": "cucharadas"},
+            "Sal": {"Cantidad": "al gusto", "Unidad": ""},
+            "Pimienta": {"Cantidad": "al gusto", "Unidad": ""}
+        },
+        "Instrucciones": [
+            "Cortar la pechuga de pollo en trozos medianos.",
+            "Escurrir la piña y cortar en trozos del mismo tamaño que el pollo.",
+            "En un bol, mezclar el pollo con el curry, sal, pimienta y el jugo de la piña.",
+            "Montar las brochetas alternando trozos de pollo, piña y bacon.",
+            "Cocinar las brochetas en una parrilla o sartén caliente durante 10-15 minutos, girándolas para que se cocinen uniformemente."
+        ]
+    },
+    "Albondigas con salsa de tomate":{
+        "imagen": "/imagenes/albondigascontomate.jpg",
+        "Ingredientes": {
+            "Carne picada de ternera": {"Cantidad": 500, "Unidad": "gramos"},
+            "Pan rallado": {"Cantidad":100, "Unidad": "gramos"},
+            "Huevo": {"Cantidad":1, "Unidad": "pieza"},
+            "Leche": {"Cantidad":"1/2", "Unidad": "vaso"},
+            "Ajo": {"Cantidad":2, "Unidad": "dientes"},
+            "Perejil fresco": {"Cantidad":1, "Unidad": "manojo"},
+            "Sal": {"Cantidad": "al gusto", "Unidad": ""},
+            "Pimienta": {"Cantidad": "al gusto", "Unidad": ""},
+            "Aceite de oliva virgen extra": {"Cantidad":4, "Unidad": "cucharadas"},
+            "Cebolla": {"Cantidad":1, "Unidad": "pieza"},
+            "Tomate triturado": {"Cantidad":400, "Unidad": "gramos"}
+        },
+        "Instrucciones": [
+            "En un bol grande, mezclar la carne picada, pan rallado, huevo, leche, ajo picado, perejil picado, sal y pimienta hasta obtener una mezcla homogénea.",
+            "Formar albóndigas del tamaño deseado con la mezcla de carne.",
+            "En una sartén grande, calentar el aceite de oliva a fuego medio-alto y dorar las albóndigas por todos lados. Retirar y reservar.",
+            "En la misma sartén, añadir la cebolla picada y cocinar hasta que esté dorada.",
+            "Agregar el tomate triturado a la sartén y cocinar a fuego lento durante 10 minutos.",
+            "Volver a colocar las albóndigas en la sartén con la salsa de tomate y cocinar a fuego lento durante 15-20 minutos hasta que estén bien cocidas."
+        ]
+    },
+    "Costillas al horno":{
+        "imagen": "/imagenes/costilla-de-cerdo.jpg",
+        "Ingredientes": {   
+            "Costillas de cerdo": {"Cantidad": 2, "Unidad": "piezas"},
+            "Ajos": {"Cantidad":4, "Unidad": "dientes"},
+            "Patatas": {"Cantidad":4, "Unidad": "piezas"},         
+            "Aceite de oliva virgen extra": {"Cantidad":4, "Unidad": "cucharadas"},
+            "Sal": {"Cantidad": "al gusto", "Unidad": ""},
+            "Pimienta": {"Cantidad": "al gusto", "Unidad": ""},
+            "Romero": {"Cantidad":1, "Unidad": "cucharadas"}
+        },
+        "Instrucciones": [
+            "Precalentar el horno a 200°C.",
+            "Pelar y cortar las patatas en rodajas gruesas.",
+            "Picar finamente los ajos.",
+            "En un bol, mezclar el aceite de oliva, ajos picados, sal, pimienta y romero.",
+            "Frotar las costillas con la mezcla de aceite y especias.",
+            "Colocar las costillas en una bandeja para horno y rodearlas con las patatas.",
+            "Hornear durante 1 hora y 15 minutos, dando la vuelta a las costillas y patatas a mitad de cocción."
+        ]
+    },
+    "Dorada a la sal":{
+        "imagen": "/imagenes/doradaalasal.jpg",
+        "Ingredientes": {
+            "Dorada entera": {"Cantidad": 2, "Unidad": "pieza"},
+            "Sal gruesa": {"Cantidad":2, "Unidad": "kg"},            
+            "Rodajas de limón": {"Cantidad":1, "Unidad": "pieza"},
+            "Ramas de perejil": {"Cantidad":1, "Unidad": "manojo"}
+        },
+        "Instrucciones": [
+            "Precalentar el horno a 200°C.",
+            "Limpiar la dorada y secarla con papel de cocina.",
+            "Mezclar la sal gruesa con agua.",
+            "Colocar una capa de la mezcla de sal en una bandeja para horno.",
+            "Colocar la dorada sobre la capa de sal y rellenar el interior con rodajas de limón y ramas de perejil.",
+            "Cubrir completamente la dorada con el resto de la mezcla de sal, presionando firmemente para que quede bien sellada.",
+            "Hornear durante 25-30 minutos.",
+            "Retirar del horno y dejar reposar durante 5 minutos antes de romper la costra de sal y servir."
+        ]
+    },
+    "Estofado de ternera":{
+        "imagen": "imagenes/estofadodeternera.jpeg",
+        "Ingredientes": {
+            "Carne de ternera para guisar": {"Cantidad": 1, "Unidad": "kg"},
+            "Cebollas grandes": {"Cantidad":1, "Unidad": "piezas"},
+            "Zanahorias": {"Cantidad":3, "Unidad": "piezas"},
+            "Patatas grandes": {"Cantidad":4, "Unidad": "piezas"},
+            "Ajos": {"Cantidad":4, "Unidad": "dientes"},
+            "Vino tinto": {"Cantidad":1, "Unidad": "vaso"},
+            "Caldo de carne o agua": {"Cantidad":500, "Unidad": "ml"},
+            "Aceite de oliva virgen extra": {"Cantidad":4, "Unidad": "cucharadas"},
+            "vinagre de vino": {"Cantidad":"1/2", "Unidad": "vaso"},
+            "Nuez moscada": {"Cantidad":1, "Unidad": "cucharadita"},
+            "Pimiento verde": {"Cantidad":1, "Unidad": "pieza"},
+            "Laurel": {"Cantidad":2, "Unidad": "hojas"},
+            "Perejil": {"Cantidad":1, "Unidad": "manojo"},
+            "Azafrán": {"Cantidad":1, "Unidad": "sobre"},
+            "Sal": {"Cantidad": "al gusto", "Unidad": ""},
+            "Pimienta": {"Cantidad": "al gusto", "Unidad": ""}
+        },
+        "Instrucciones": [
+            "Cortar la carne de ternera en trozos medianos y sazonar con sal y pimienta.",
+            "En una olla expres, poner todos los ingredientes menos las patatas.",
+            "Poner 1/2 vaso de agua y cocinar durante 20 minutos a partir de que empiece a salir vapor en el 2.",
+            "Agregar las patatas peladas y cortadas en trozos grandes, cubrir con agua o caldo de carne y cocinar durante 15 minutos."
+        ]
+    },
+    "Aleta de ternera rellena":{
+        "imagen": "/imagenes/aletadeternerarellena.jpg",
+        "Ingredientes": {
+            "Aleta de ternera": {"Cantidad": 1, "Unidad": "kg"},
+            "Bacon en lonchas": {"Cantidad":150, "Unidad": "gramos"},
+            "Tortilla francesa": {"Cantidad":1, "Unidad": "piezas"},
+            "Aceitunas verdes sin hueso": {"Cantidad":100, "Unidad": "gramos"},
+            "Cebolla": {"Cantidad":2, "Unidad": "pieza"},
+            "Pimiento rojo": {"Cantidad":1, "Unidad": "pieza"},
+            "Zanahoria": {"Cantidad":2, "Unidad": "pieza"},
+            "Vino tinto": {"Cantidad":1, "Unidad": "vaso"},
+            "Aceite de oliva virgen extra": {"Cantidad":4, "Unidad": "cucharadas"},
+            "Sal": {"Cantidad": "al gusto", "Unidad": ""},
+            "Pimienta": {"Cantidad": "al gusto", "Unidad": ""}
+        },
+        "Instrucciones": [
+            "Abrir la aleta de ternera en forma de libro y sazonar con sal y pimienta.",
+            "Colocar las lonchas de bacon sobre la carne, luego la tortilla francesa cortada en tiras y las aceitunas picadas.",
+            "Enrollar la carne firmemente y atarla con hilo de cocina para mantener la forma.",
+            "En una olla expres, calentar el aceite de oliva y dorar el rollo de carne por todos lados.",
+            "Añadir la cebolla, pimiento y zanahoria picados a la olla y cocinar hasta que estén tiernos.",
+            "Verter el vino tinto y dejar reducir durante 5 minutos.",
+            "Cubrir con agua, tapar y cocinar durante 35 horas hasta que la carne esté tierna."
+        ]
+    },
+    "Berenjena rellena de carne":{
+        "imagen": "imagenes/berenjenas-rellenas-carne-picada.jpg",
+        "Ingredientes": {
+            "Berenjenas grandes": {"Cantidad": 2, "Unidad": "piezas"},
+            "Carne picada de ternera": {"Cantidad":400, "Unidad": "gramos"},
+            "Pimiento verde": {"Cantidad":1, "Unidad": "pieza"},
+            "Cebolla": {"Cantidad":1, "Unidad": "pieza"},
+            "Ajo": {"Cantidad":2, "Unidad": "dientes"},
+            "Tomate triturado": {"Cantidad":400, "Unidad": "gramos"},
+            "Queso rallado": {"Cantidad":100, "Unidad": "gramos"},
+            "Aceite de oliva virgen extra": {"Cantidad":4, "Unidad": "cucharadas"},
+            "Sal": {"Cantidad": "al gusto", "Unidad": ""},
+            "Pimienta": {"Cantidad": "al gusto", "Unidad": ""},
+            "Leche": {"Cantidad":1, "Unidad": "vaso"},
+            "Harina": {"Cantidad":2, "Unidad": "cucharadas"}
+        },
+        "Instrucciones": [
+            "Precalentar el horno a 200°C.",
+            "Cortar las berenjenas por la mitad a lo largo, hacer unos cortes, sazonar, regar con aceite y hornear durante 15 minutos.",
+            "Luego vaciar las berenjenas con una cuchara y reservar la pulpa.",
+            "Preparar una bechamel ligera calentando la leche en un cazo, añadiendo la harina y removiendo hasta que espese.", 
+            "Picar la pulpa de berenjena, pimiento, cebolla y ajo.",
+            "En una sartén grande, calentar el aceite de oliva y sofreír la cebolla, pimiento y ajo hasta que estén tiernos.",
+            "Añadir la carne picada y cocinar hasta que esté dorada.",
+            "Incorporar la pulpa de berenjena picada, un poco de bechamel y el tomate triturado. Cocinar a fuego lento durante 10 minutos. Sazonar con sal y pimienta.",
+            "Rellenar las mitades de berenjena con la mezcla de carne y verduras.",
+            "Colocar las berenjenas rellenas en una bandeja para horno.",            
+            "Verter la bechamel sobre las berenjenas rellenas y espolvorear con queso rallado.",
+            "Hornear durante 2-3 minutos hasta que estén doradas."
+        ]
+    },
+    "Garbanzos con espinacas":{
+        "imagen": "imagenes/garbanzos-con-espinacasl.jpg",
+        "Ingredientes": {
+            "Garbanzos": {"Cantidad": 2, "Unidad": "tazas"},
+            "Espinacas frescas": {"Cantidad":500, "Unidad": "gramos"},
+            "Cebolla": {"Cantidad":1, "Unidad": "pieza"},
+            "Ajo": {"Cantidad":2, "Unidad": "dientes"},
+            "Tomates": {"Cantidad":2, "Unidad": "piezas"},
+            "Pimentón dulce": {"Cantidad":1, "Unidad": "cucharadita"},
+            "Comino molido": {"Cantidad":1, "Unidad": "cucharadita"},
+            "Aceite de oliva virgen extra": {"Cantidad":4, "Unidad": "cucharadas"},
+            "Sal": {"Cantidad": "al gusto", "Unidad": ""},
+            "Pimienta": {"Cantidad": "al gusto", "Unidad": ""}
+        },
+        "Instrucciones": [
+            "Poner los garbanzos en remojo la noche anterior en agua caliente.",
+            "En una olla grande, calentar el aceite de oliva a fuego medio.",
+            "Añadir la cebolla picada y el ajo, cocinando hasta que estén dorados.",
+            "Agregar el tomate triturado, pimentón y comino, cocinando durante 5 minutos.",
+            "Incorporar los garbanzos escurridos y cubrir con agua. Cocinar a fuego lento durante 1 hora o hasta que los garbanzos estén tiernos.",
+            "Añadir las espinacas frescas y cocinar durante 10 minutos más hasta que estén tiernas.",
+            "Sazonar con sal y pimienta al gusto antes de servir."
+        ]
+    },
+    "Chipirones encebollados":{
+        "imagen": "imagenes/chipironesencebollados.jpg",
+        "Ingredientes": {
+            "Chipirones frescos": {"Cantidad": 1, "Unidad": "kg"},
+            "Cebollas grandes": {"Cantidad":2, "Unidad": "piezas"},
+            "Ajos": {"Cantidad":3, "Unidad": "dientes"},
+            "Vino blanco": {"Cantidad":"1/2", "Unidad": "vaso"},
+            "Aceite de oliva virgen extra": {"Cantidad":4, "Unidad": "cucharadas"},
+            "Pimienta": {"Cantidad": "al gusto", "Unidad": ""}
+        },
+        "Instrucciones": [
+            "Limpiar los chipirones.",
+            "Pelar y cortar las cebollas en octavos y los ajos en láminas finas.",
+            "En una sartén grande, calentar el aceite de oliva a fuego medio-alto.",            
+            "Freir los chipirones y apartar.",
+            "Añadir las cebollas y ajos, cocinando hasta que estén dorados.",
+            "Agregar los chipirones de nuevo a la sartén.",
+            "Verter el vino blanco y dejar reducir durante 2-3 minutos.",
+            "Sazonar con pimienta al gusto antes de servir."
+        ]
+    },
+    "Sopa castellana":{
+        "imagen": "imagenes/sopa-castellana.jpg",
+        "Ingredientes": {
+            "Pan del día anterior": {"Cantidad": 200, "Unidad": "gramos"},
+            "Ajos": {"Cantidad":4, "Unidad": "dientes"},
+            "Jamón serrano en taquitos": {"Cantidad":100, "Unidad": "gramos"},
+            "Pimentón dulce": {"Cantidad":1, "Unidad": "cucharadita"},            
+            "Huevos": {"Cantidad":4, "Unidad": "piezas"},
+            "Aceite de oliva virgen extra": {"Cantidad":4, "Unidad": "cucharadas"},
+            "Sal": {"Cantidad": "al gusto", "Unidad": ""},
+            "Caldo de pollo":{
+                "Huesos de pollo": {"Cantidad":2, "Unidad": "piezas"},
+                "Agua": {"Cantidad":2, "Unidad": "litros"},
+                "Puerro": {"Cantidad":1, "Unidad": "pieza"},
+                "Zanahoria": {"Cantidad":1, "Unidad": "pieza"}
+            }
+        },
+        "Instrucciones": [
+            "Para el caldo: En una olla grande, poner los huesos de pollo, puerro y zanahoria. Cubrir con agua y llevar a ebullición. Reducir el fuego y cocinar a fuego lento durante 1 hora. Colar y reservar el caldo.",
+            "Cortar el pan en rebanadas finas.",
+            "Pelar y cortar los ajos en láminas finas.",
+            "En una olla grande, calentar el aceite de oliva a fuego medio.",
+            "Añadir los ajos y sofreír hasta que estén dorados.",
+            "Agregar el jamón serrano y cocinar durante 2 minutos.",
+            "Incorporar el pimentón dulce y mezclar bien.",
+            "Añadir el caldo de pollo o agua y llevar a ebullición.",
+            "Agregar las rebanadas de pan y cocinar durante 10 minutos hasta que el pan esté tierno.",
+            "Romper los huevos sobre la sopa y cocinar durante 3-4 minutos hasta que las claras estén cuajadas pero las yemas aún líquidas.",
+            "Sazonar con sal al gusto antes de servir."
+        ]
+    },
+    "Rabo de toro estofado":{
+        "imagen": "imagenes/rabo-de-toro.jpg",
+        "Ingredientes": {
+            "Rabo de toro": {"Cantidad": 1.5, "Unidad": "kg"},
+            "Cebollas grandes": {"Cantidad":2, "Unidad": "piezas"},
+            "Zanahorias": {"Cantidad":2, "Unidad": "piezas"},
+            "Ajos": {"Cantidad":4, "Unidad": "dientes"},
+            "Vino tinto": {"Cantidad":1, "Unidad": "vaso"},
+            "Caldo de carne o agua": {"Cantidad":500, "Unidad": "ml"},
+            "Aceite de oliva virgen extra": {"Cantidad":4, "Unidad": "cucharadas"},
+            "Tomate triturado": {"Cantidad":400, "Unidad": "gramos"},
+            "Laurel": {"Cantidad":2, "Unidad": "hojas"},
+            "Sal": {"Cantidad": "al gusto", "Unidad": ""},
+            "Pimienta": {"Cantidad": "al gusto", "Unidad": ""}
+        },
+        "Instrucciones": [
+            "Cortar el rabo de toro en trozos y sazonar con sal y pimienta.",
+            "En una olla grande, calentar el aceite de oliva y dorar los trozos de rabo por todos lados. Retirar y reservar.",
+            "En la misma olla, añadir la cebolla, zanahorias y ajos picados, cocinando hasta que estén tiernos.",
+            "Agregar el tomate triturado y cocinar durante 5 minutos.",
+            "Verter el vino tinto y dejar reducir durante 5 minutos.",
+            "Incorporar el caldo de carne o agua, las hojas de laurel y los trozos de rabo de toro.",
+            "Cocinar a fuego lento unas 2 horas, dandole la vuelta de vez en cuando hasta que la carne esté tierna."
+        ]
+    },
+    "Merluza en salsa verde":{
+        "imagen": "/imagenes/merluza-en-salsa-verde.jpg",
+        "Ingredientes": {
+            "Filetes de merluza": {"Cantidad": 4, "Unidad": "piezas"},
+            "Ajos": {"Cantidad":4, "Unidad": "dientes"},
+            "Perejil fresco": {"Cantidad":1, "Unidad": "manojo"},
+            "Vino blanco": {"Cantidad":"1/2", "Unidad": "vaso"},
+            "Caldo de pescado o agua": {"Cantidad":250, "Unidad": "ml"},
+            "Aceite de oliva virgen extra": {"Cantidad":4, "Unidad": "cucharadas"},
+            "Harina": {"Cantidad":2, "Unidad": "cucharadas"},
+            "Sal": {"Cantidad": "al gusto", "Unidad": ""},
+            "Pimienta": {"Cantidad": "al gusto", "Unidad": ""}
+        },
+        "Instrucciones": [
+            "Sazonar los filetes de merluza con sal y pimienta.",
+            "En una sartén grande, calentar el aceite de oliva a fuego medio.",
+            "Añadir los ajos picados y sofreír hasta que estén dorados.",
+            "Incorporar la harina y mezclar bien para formar un roux.",
+            "Verter el vino blanco y dejar reducir durante 2-3 minutos.",
+            "Agregar el caldo de pescado o agua y llevar a ebullición.",
+            "Añadir los filetes de merluza a la sartén y cocinar durante 5-7 minutos hasta que estén cocidos.",
+            "Espolvorear con perejil picado antes de servir."
+        ]
+    },
+    "Merluza con almejas y gambones":{
+        "imagen": "imagenes/merluzaconalmejas.jpg",
+        "Ingredientes": {
+            "Filetes de merluza": {"Cantidad": 4, "Unidad": "piezas"},
+            "Almejas": {"Cantidad":250, "Unidad": "gramos"},
+            "Gambones": {"Cantidad":16, "Unidad": "piezas"},            
+            "Aceite de oliva virgen extra": {"Cantidad":4, "Unidad": "cucharadas"},
+            "Harina": {"Cantidad":2, "Unidad": "cucharadas"},
+            "Sal": {"Cantidad": "al gusto", "Unidad": ""},
+            "Pimienta": {"Cantidad": "al gusto", "Unidad": ""},
+            "Ingredientes Fumet": {
+                "Puerro": {"Cantidad":1, "Unidad": "pieza"},
+                "Ajos": {"Cantidad":2, "Unidad": "dientes"},
+                "Cebolla": {"Cantidad":1, "Unidad": "pieza"},
+                "Tomate": {"Cantidad":1, "Unidad": "piezas"},
+                "Laurel": {"Cantidad":1, "Unidad": "hoja"},
+                "Coñac": {"Cantidad":50, "Unidad": "ml"},
+                "Agua": {"Cantidad":1000, "Unidad": "ml"}
+            },
+            "Ingredientes Salsa": {
+                "Ajos": {"Cantidad":2, "Unidad": "dientes"},
+                "Perejil fresco": {"Cantidad":1, "Unidad": "manojo"},
+                "Cebolla": {"Cantidad":1, "Unidad": "pieza"},
+                "Sal": {"Cantidad": "al gusto", "Unidad": ""},
+                "Pimenton dulce": {"Cantidad":1, "Unidad": "cucharadita"},
+                "Fumet de pescado": {"Cantidad":750, "Unidad": "ml"},
+                "Maicena": {"Cantidad":1, "Unidad": "cucharadas"}
+            }
+        },
+        "Instrucciones": [
+            "Lavar las almejas en agua con sal para eliminar la arena.",
+            "Echar en una cazuela y tapar hasta que se abran. Retirar las almejas y reservar el caldo.",
+            "Quitar las cabezas, bigotes y cáscaras de los gambones, reservando los cuerpos.",
+            "Preparar el fumet: Poner en aceite calentado las cabezas de los gambones y sofreír durante unos minutos. Incorporar la verdura del fumet y cocinar durante 7-8 minutos. Poner el coñac y apagando el estractor prender fuego para flambear.",
+            "Cuando se apage el fuego, incorporar la hoja de laurel y 1 litro de agua y el jugo de abrir las almejas. Cocinar durante 20 minutos a fuego lento quitando las impurezas.",
+            "Quitar la hoja de laurel y pasar todo al vaso de  la batidora. Triturar y colar el fumet, reservando.",
+            "Preparar la salsa: Picar finamente los ajos, perejil y cebolla. Reservamos",
+            "Sazonar los filetes de merluza con sal y pimienta.",
+            "Pasar los filetes de merluza por harina y en una sartén grande, calentar el aceite de oliva a fuego medio-alto.",
+            "Añadir los filetes de merluza y cocinar durante 3-4 minutos por cada lado hasta que estén cocidos. Retirar y reservar.",
+            "En la misma sartén, añadir  la picada de ajo, cebolla y perejil, cocinando durante 7 minutos. Incorporamos el pimentón dulce, y vertemos el fumet dejando un poco por si necesitamos.",
+            "Incorporar los filetes de merluza a la sartén y cocinamos durante 3 minutos tapando la saten. Damos la vuelta al pescado y cocemos 4 minutos.",
+            "Diluimos la maicena en agua fria y la añadimos a la salsa para espesarla un poco.",
+            "Incorporamos los gambones, cocinando durante 2-3 minutos hasta que los gambones estén rosados, incorporamos las almejas, apagamos el fuego y ponemos la tapadera."
+        ]
+    },"carne con tomate":{
+        "imagen": "/imagenes/carnecontomate.jpg",
+        "Ingredientes": {
+            "Carne de cerdo o ternera": {"Cantidad": 1, "Unidad": "kg"},
+            "Cebolla grande": {"Cantidad":2, "Unidad": "pieza"},
+            "Ajo": {"Cantidad":2, "Unidad": "dientes"},            
+            "Tomate triturado": {"Cantidad":800, "Unidad": "gramos"},
+            "Laurel": {"Cantidad":2, "Unidad": "hojas"},
+            "Aceite de oliva virgen extra": {"Cantidad":4, "Unidad": "cucharadas"},
+            "Vino tinto": {"Cantidad":50, "Unidad": "ml"},
+            "Nuez moscada": {"Cantidad":1, "Unidad": "cucharadita"},
+            "Sal": {"Cantidad": "al gusto", "Unidad": ""},
+            "Pimienta": {"Cantidad": "al gusto", "Unidad": ""}
+        },
+        "Instrucciones": [
+            "Cortar la carne en trozos medianos y sazonar con sal y pimienta.",
+            "En una olla expres, calentar el aceite de oliva a fuego medio-alto.",
+            "Añadir la carne y dorar por todos lados. Retirar y reservar.",
+            "En la misma olla, añadir la cebolla picada y el ajo, cocinando hasta que estén dorados.",
+            "Sube el fuego y agrega el vino tinto, dejando reducir durante 2-3 minutos.",
+            "baja el fuego y agrega el tomate triturado y las hojas de laurel, nuez moscada y la carne.",
+            "Cocinar a fuego medio durante 10 minutos al 2."
+        ]
+    },
+    "Jamoncitos de pollo al curry":{
+        "imagen": "/imagenes/jamoncitosalcurry.jpg",
+        "Ingredientes": {
+            "Jamoncitos de pollo": {"Cantidad": 8, "Unidad": "piezas"},
+            "Cebolla": {"Cantidad":1, "Unidad": "pieza"},
+            "Zanahoria": {"Cantidad":2, "Unidad": "piezas"},
+            "Pimiento verde": {"Cantidad":1, "Unidad": "pieza"},
+            "Curry en polvo": {"Cantidad":2, "Unidad": "cucharaditas"},
+            "Ajo": {"Cantidad":5, "Unidad": "dientes"},
+            "Harina": {"Cantidad":1, "Unidad": "cucharadita"},
+            "Agua": {"Cantidad":"1/2", "Unidad": "vaso"},
+            "Aceite de oliva virgen extra": {"Cantidad":4, "Unidad": "cucharadas"},
+            "Sal": {"Cantidad": "al gusto", "Unidad": ""},
+            "Pimienta": {"Cantidad": "al gusto", "Unidad": ""},
+            "Perejil fresco": {"Cantidad":1, "Unidad": "manojo"}
+        },
+        "Instrucciones": [
+            "Salpimentar los jamoncitos de pollo y dorarlos en una sarten con aceite de oliva a fuego medio-alto. Retirar y reservar.",
+            "Picar la cebolla, zanahoria, pimiento verde y ajos y rehoga en una olla expres. Añade loa harina y mezcla bien.",
+            "Añadir los jamoncitos de pollo, el curry, el vino blanco y el agua.",
+            "Tapa la olla y conida al 2  durante 3 minutos desde que empiece a salir vapor.",
+            "Retira los jamoncitos y tritura la salsa. Rectifica de sal y pimienta.",
+            "Sirve los jamoncitos bañados con la salsa y espolvoreados con perejil picado."
+        ]
+    },
+    "Merluza en salsa de piquillos":{
+        "imagen": "/imagenes/merluzaensalsapiquillos.jpg",
+        "Ingredientes": {
+            "Filetes de merluza": {"Cantidad": 4, "Unidad": "piezas"},
+            "Pimientos del piquillo": {"Cantidad":200, "Unidad": "gramos"},
+            "Cebolla": {"Cantidad":1, "Unidad": "pieza"},
+            "Ajo": {"Cantidad":2, "Unidad": "dientes"},
+            "vino blanco": {"Cantidad":1, "Unidad": "vaso"},
+            "Nata para cocinar": {"Cantidad":200, "Unidad": "ml"},
+            "Aceite de oliva virgen extra": {"Cantidad":4, "Unidad": "cucharadas"},
+            "Sal": {"Cantidad": "al gusto", "Unidad": ""},
+            "Pimienta": {"Cantidad": "al gusto", "Unidad": ""},
+            "Perejil fresco": {"Cantidad":1, "Unidad": "manojo"}
+        },
+        "Instrucciones": [
+            "Picar la cebolla y el ajo y sofreír en una sartén con aceite de oliva hasta que estén dorados.",
+            "Añadir los pimientos del piquillo y cocinar durante 5 minutos.",
+            "Incorporar el vino blanco y dejar reducir durante 2-3 minutos.",
+            "Incorporar la nata para cocinar y mezclar bien. Cocinar a fuego medio hasta que la salsa espese.",
+            "Echar la salsa en el vaso de la batidora y triturar hasta obtener una salsa suave. Sazonar con sal y pimienta al gusto.",
+            "Salpimentar los filetes de merluza y colocarlos en la sartén con la salsa.",
+            "Cocinar durante 5-7 minutos o hasta que la merluza esté hecha.",
+            "Espolvorear con perejil fresco picado antes de servir."
+        ]
+    },
+    "Bacalao al ajoarriero":{
+        "imagen": "/imagenes/bacalaoajoarriero.jpg",
+        "Ingredientes": {
+            "Lomos de bacalao desmigao y desalao": {"Cantidad": 1, "Unidad": "envase"},            
+            "Pimiento rojo": {"Cantidad":2, "Unidad": "pieza"},
+            "Pimiento verde": {"Cantidad":2, "Unidad": "pieza"},
+            "Ajo": {"Cantidad":7, "Unidad": "dientes"},
+            "Tomate triturado": {"Cantidad":400, "Unidad": "gramos"},
+            "Aceite de oliva virgen extra": {"Cantidad":4, "Unidad": "cucharadas"},            
+            "Sal": {"Cantidad": "al gusto", "Unidad": ""},
+            "Pimienta": {"Cantidad": "al gusto", "Unidad": ""}
+        },
+        "Instrucciones": [
+            "Picar los pimientos y los ajos en trozos pequeños.",
+            "En una sartén grande, calentar el aceite de oliva a fuego medio.",
+            "Añadir los ajos picados y sofreír hasta que estén dorados.",
+            "Incorporar los pimientos picados y cocinar hasta que estén tiernos.",
+            "Añadir el bacalao desmigado a la sartén y mezclar bien con los pimientos y ajos. Cocinar durante 5 minutos.",
+            "Agregar el tomate triturado y cocinar a fuego lento durante 10 minutos.",            
+            "Sazonar con sal y pimienta al gusto antes de servir."
+        ]
+    },
+    "Canelones de carne":{
+        "imagen": "/imagenes/canelonesdecarne.jpg",
+        "Ingredientes": {
+            "Placas de canelones": {"Cantidad": 12, "Unidad": "piezas"},
+            "Carne picada de ternera y cerdo": {"Cantidad":400, "Unidad": "gramos"},
+            "Pate": {"Cantidad":1, "Unidad": "lata"},
+            "Cebolla": {"Cantidad":1, "Unidad": "pieza"},
+            "Ajo": {"Cantidad":1, "Unidad": "dientes"},
+            "Tomate frito": {"Cantidad":400, "Unidad": "gramos"},
+            "Bechamel": {
+                "Mantequilla": {"Cantidad":50, "Unidad": "gramos"},
+                "Harina": {"Cantidad":50, "Unidad": "gramos"},
+                "Leche": {"Cantidad":500, "Unidad": "ml"},
+                "Nuez moscada": {"Cantidad":1, "Unidad": "cucharadita"},
+                "Sal": {"Cantidad": "al gusto", "Unidad": ""}
+            },
+            "Queso rallado": {"Cantidad":100, "Unidad": "gramos"},
+            "Aceite de oliva virgen extra": {"Cantidad":4, "Unidad": "cucharadas"},
+            "Sal": {"Cantidad": "al gusto", "Unidad": ""},
+            "Pimienta": {"Cantidad": "al gusto", "Unidad": ""}
+        },
+        "Instrucciones": [
+            "Cocer las placas de canelones según las instrucciones del paquete. Escurrir y reservar.",
+            "Picar la cebolla y el ajo y sofreír en una sartén con aceite de oliva hasta que estén dorados.",
+            "Añadir la carne picada y cocinar hasta que esté dorada. Incorporar el tomate frito y el pate, cocinando durante 10 minutos. Sazonar con sal y pimienta al gusto.",
+            "Preparar la bechamel: En un cazo, derretir la mantequilla, añadir la harina y mezclar bien. Verter la leche poco a poco, removiendo constantemente hasta que espese. Añadir nuez moscada y sal al gusto.",
+            "Rellenar las placas de canelones con la mezcla de carne y enrollar.",
+            "Colocar los canelones en una bandeja para horno, cubrir con la bechamel y espolvorear con queso rallado.",
+            "Hornear a 200°C durante 20 minutos o hasta que estén dorados."
+        ]
+    },
+    "Solomillo al pedro ximenez":{
+        "imagen": "/imagenes/solomillopedroximenez.jpg",
+        "Ingredientes": {
+            "Solomillo de cerdo": {"Cantidad": 2, "Unidad": "kg"},            
+            "Cebolla": {"Cantidad":2, "Unidad": "pieza"},
+            "Ajo": {"Cantidad":2, "Unidad": "dientes"},
+            "Vino Pedro Ximenez": {"Cantidad":"1/2", "Unidad": "vaso"},
+            "Caldo de carne o agua": {"Cantidad":500, "Unidad": "ml"},
+            "harina": {"Cantidad":1, "Unidad": "cucharadas"},
+            "Aceite de oliva virgen extra": {"Cantidad":4, "Unidad": "cucharadas"},
+            "Sal": {"Cantidad": "al gusto", "Unidad": ""},
+            "Pimienta": {"Cantidad": "al gusto", "Unidad": ""}
+        },
+        "Instrucciones": [
+            "Sazonar el solomillo de cerdo con sal y pimienta.",
+            "En una sartén grande, calentar el aceite de oliva a fuego medio-alto.",
+            "Añadir el solomillo y dorar por todos lados. Retirar y reservar.",
+            "Echar el pedro ximenez y apagar el fuego. Raspar el fondo de la sartén para despegar los jugos.",
+            "En la misma sartén, añadir la cebolla en juliana y el ajo picados, cocinando hasta que estén dorados.",
+            "Incorporar la harina y mezclar bien para formar un roux.",
+            "Verter el vino Pedro Ximenez y dejar reducir durante 1 minutos.",
+            "Incorporar el caldo de carne o agua y llevar a ebullición.",
+            "Colocar el solomillo de nuevo en la sartén y cocinar a fuego medio durante 30 minutos, girando a los 15 minutos.",
+            "Cortar el solomillo en filetes y servir con la salsa por encima."
+        ]
+    },
+    "Solomillo wellington":{
+        "imagen": "imagenes/solomillowellintong.jpg",
+        "Ingredientes": {
+            "Solomillo de ternera": {"Cantidad": 1, "Unidad": "kg"},
+            "Masa de hojaldre": {"Cantidad":1, "Unidad": "hoja"},
+            "Champiñones": {"Cantidad":250, "Unidad": "gramos"},
+            "Cebolla": {"Cantidad":1, "Unidad": "pieza"},
+            "Ajo": {"Cantidad":2, "Unidad": "dientes"},
+            "Mostaza de Dijon": {"Cantidad":2, "Unidad": "cucharadas"},
+            "Huevo": {"Cantidad":1, "Unidad": "pieza"},
+            "Aceite de oliva virgen extra": {"Cantidad":4, "Unidad": "cucharadas"},
+            "Sal": {"Cantidad": "al gusto", "Unidad": ""},
+            "Pimienta": {"Cantidad": "al gusto", "Unidad": ""}
+        },
+        "Instrucciones": [
+            "Sazonar el solomillo de ternera con sal y pimienta.",
+            "En una sartén grande, calentar el aceite de oliva a fuego medio-alto.",
+            "Añadir el solomillo y dorar por todos lados. Retirar y reservar.",
+            "En la misma sartén, añadir la cebolla y el ajo picados, cocinando hasta que estén dorados.",
+            "Agregar los champiñones picados y cocinar hasta que estén tiernos. Sazonar con sal y pimienta al gusto.",
+            "Extender la masa de hojaldre sobre una superficie enharinada.",
+            "Untar el solomillo con mostaza de Dijon y colocar en el centro de la masa de hojaldre.",
+            "Cubrir el solomillo con la mezcla de champiñones y cebolla.",
+            "Enrollar la masa de hojaldre alrededor del solomillo, sellando los bordes con huevo batido.",
+            "Colocar el solomillo envuelto en una bandeja para horno y pincelar con huevo batido.",
+            "Hornear a 200°C durante 25-30 minutos o hasta que la masa esté dorada."
+        ]
+    },
+    "Bonito con tomate":{
+        "imagen": "/imagenes/bonitocontomate.jpg",
+        "Ingredientes": {
+            "Bonito": {"Cantidad": 1, "Unidad": "Kg"},
+            "Tomate triturado": {"Cantidad":400, "Unidad": "gramos"},
+            "Pimiento verde": {"Cantidad":1, "Unidad": "pieza"},
+            "Cebolla": {"Cantidad":1, "Unidad": "pieza"},
+            "Ajo": {"Cantidad":2, "Unidad": "dientes"},
+            "Aceite de oliva virgen extra": {"Cantidad":4, "Unidad": "cucharadas"},
+            "Sal": {"Cantidad": "al gusto", "Unidad": ""},
+            "Pimienta": {"Cantidad": "al gusto", "Unidad": ""}
+        },
+        "Instrucciones": [
+            "Sazonar los lomos de bonito con sal y pimienta.",
+            "En una sartén grande, calentar el aceite de oliva a fuego medio, sofreir el bonito en trozos y reservar.",
+            "Añadir la cebolla, pimiento verde y ajo picados, cocinando hasta que estén dorados.",
+            "Incorporar el tomate triturado y cocinar a fuego lento durante 10 minutos.",
+            "Colocar el bonito en la sartén con la salsa de tomate.",
+            "Cocinar durante 5-7 minutos hasta que el bonito esté cocido.",
+            "Servir caliente con la salsa por encima."
+        ]
+    },
+    "Judias pintas":{
+        "imagen": "/imagenes/judiaspintas.jpg",
+        "Ingredientes": {
+            "Judías pintas": {"Cantidad": 2, "Unidad": "tazas"},
+            "Cebolla": {"Cantidad":1, "Unidad": "pieza"},
+            "Ajo": {"Cantidad":2, "Unidad": "dientes"},
+            "Zanahoria": {"Cantidad":2, "Unidad": "piezas"},
+            "Pimiento verde": {"Cantidad":1, "Unidad": "pieza"},
+            "Morcilla": {"Cantidad":1, "Unidad": "pieza"},
+            "Chorizo": {"Cantidad":1, "Unidad": "pieza"},
+            "Aceite de oliva virgen extra": {"Cantidad":4, "Unidad": "cucharadas"},
+            "Sal": {"Cantidad": "al gusto", "Unidad": ""},
+            "Pimienta": {"Cantidad": "al gusto", "Unidad": ""},
+            "pimenton": {"Cantidad":1, "Unidad": "cucharadita"},
+            "Patatas": {"Cantidad":2, "Unidad": "piezas"},
+            "Hueso de jamón": {"Cantidad":1, "Unidad": "pieza"},
+            "Laurel": {"Cantidad":1, "Unidad": "hoja"}
+        },
+        "Instrucciones": [
+            "Poner las judías pintas en remojo la noche anterior en agua.",
+            "En una olla expres, calentar el aceite de oliva a fuego medio.",
+            "Añadir la cebolla, ajo, zanahoria y pimiento verde picados, cocinando hasta que estén dorados.",
+            "Incorporar el chorizo, el hueso de jamón y las patatas.",
+            "Añadir las judías pintas escurridas, el laurel, la morcilla, el pimentón y cubrir con agua.",
+            "Cocinar a fuego medio durante 25 minutos al 2 desde que salga el vapor.",
+            "Incorporar las verduras al vaso batidora y triturar hasta obtener una crema suave.",
+            "Volver a echar la crema en la olla y mezclar bien.",            
+            "Sazonar con sal y pimienta al gusto antes de servir."
+        ]
+    },
+    "Lentejas estofadas":{
+        "imagen": "/imagenes/lentejasestofadas.jpg",
+        "Ingredientes": {
+            "Lentejas": {"Cantidad": 2, "Unidad": "tazas"},
+            "Cebolla": {"Cantidad":1, "Unidad": "pieza"},
+            "Ajo": {"Cantidad":2, "Unidad": "dientes"},
+            "Zanahoria": {"Cantidad":2, "Unidad": "piezas"},
+            "Pimiento verde": {"Cantidad":1, "Unidad": "pieza"},
+            "Chorizo": {"Cantidad":1, "Unidad": "pieza"},
+            "Morcilla": {"Cantidad":1, "Unidad": "pieza"},
+            "Aceite de oliva virgen extra": {"Cantidad":4, "Unidad": "cucharadas"},
+            "Sal": {"Cantidad": "al gusto", "Unidad": ""},
+            "Pimienta": {"Cantidad": "al gusto", "Unidad": ""},
+            "Pimentón dulce": {"Cantidad":1, "Unidad": "cucharadita"},
+            "Patatas": {"Cantidad":2, "Unidad": "piezas"},
+            "Hueso de jamón": {"Cantidad":1, "Unidad": "pieza"},
+            "Laurel": {"Cantidad":1, "Unidad": "hoja"}
+        },
+        "Instrucciones": [
+            "Poner las lentejas en remojo la noche anterior en agua.",
+            "En una olla expres, calentar el aceite de oliva a fuego medio.",
+            "Añadir la cebolla, ajo, zanahoria y pimiento verde picados, cocinando hasta que estén dorados.",
+            "Incorporar el chorizo, la morcilla, el hueso de jamón y las patatas.",
+            "Añadir las lentejas escurridas, el laurel, el pimentón y cubrir con agua.",
+            "Cocinar a fuego medio durante 20 minutos al 2 desde que salga el vapor.",
+            "Sazonar con sal y pimienta al gusto antes de servir."
+        ]
+    },
+    "Macarrones con chorizo al horno":{
+        "imagen": "/imagenes/macarronesconchorizo.jpg",
+        "Ingredientes": {
+            "Macarrones": {"Cantidad": 400, "Unidad": "gramos"},
+            "Chorizo": {"Cantidad":200, "Unidad": "gramos"},            
+            "Tomate frito": {"Cantidad":400, "Unidad": "gramos"},
+            "Queso rallado": {"Cantidad":100, "Unidad": "gramos"},
+            "Aceite de oliva virgen extra": {"Cantidad":4, "Unidad": "cucharadas"},
+            "Sal": {"Cantidad": "al gusto", "Unidad": ""}            
+        },
+        "Instrucciones": [
+            "Precalentar el horno a 200°C.",
+            "Cocer los macarrones en agua con sal según las instrucciones del paquete. Escurrir y reservar.",
+            "Cortar el chorizo en tacos pequeños.",            
+            "Colocar los macarrones y el chorizo en una bandeja para horno, echar el tomate frito y espolvorear con queso rallado.",
+            "Hornear durante 10-15 minutos o hasta que el queso esté dorado."
+        ]
+    }
+}
