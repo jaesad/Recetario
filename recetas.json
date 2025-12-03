@@ -194,7 +194,7 @@
         ]
     },
     "Brocheta de pollo y piña al curry":{
-        "imagen": "/imagenes/brochetasdepolloypinaalcurry.jpeg",
+        "imagen": "/imagenes/brochetasdepolloypinaalcurry.jpg",
         "Ingredientes": {
             "Pechuga de pollo": {"Cantidad": 4, "Unidad": "piezas"},
             "Piña en su jugo": {"Cantidad":1, "Unidad": "bote"},
