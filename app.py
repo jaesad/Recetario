@@ -1,269 +1,232 @@
 import streamlit as st
 import json
 import os
-from pathlib import Path
+from PIL import Image, ImageOps
 
-# Configurar la página
+# Configuración de la página (Título y layout)
 st.set_page_config(
-    page_title="Recetario de Cocina",
+    page_title="Mi Recetario",
     page_icon="🍳",
-    layout="wide",
+    layout="centered",
     initial_sidebar_state="collapsed"
 )
 
-# Estilos CSS personalizados
+# --- ESTILOS CSS PERSONALIZADOS (MOBILE FIRST) ---
+# Esto ajusta los márgenes, bordes y hace que los botones se vean mejor en móvil
 st.markdown("""
     <style>
-        /* Estilos globales */
-        .main {
-            padding: 1rem;
-        }
-        
-        /* Estilos para las tarjetas de recetas */
-        .recipe-card {
-            border: 2px solid #e0e0e0;
-            border-radius: 15px;
-            padding: 1rem;
-            text-align: center;
-            transition: transform 0.2s, box-shadow 0.2s;
-            cursor: pointer;
-            background-color: white;
-            height: 100%;
-        }
-        
-        .recipe-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-            border-color: #2E86AB;
-        }
-        
-        .recipe-card-title {
-            font-size: 1.1em;
-            font-weight: bold;
-            color: #2c3e50;
-            margin-top: 10px;
-            min-height: 50px;
-        }
-        
-        /* Estilos para vista de detalles */
-        .detail-title {
-            font-size: 2.5em;
-            font-weight: bold;
-            color: #2E86AB;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-        
-        .section-header {
-            font-size: 1.8em;
-            font-weight: bold;
-            color: #A23B72;
-            margin-top: 30px;
-            margin-bottom: 15px;
-            border-bottom: 3px solid #A23B72;
-            padding-bottom: 5px;
-        }
+    /* Ajustes generales para móvil */
+    .block-container {
+        padding-top: 2rem;
+        padding-bottom: 5rem;
+    }
+    
+    /* Estilo de las tarjetas de recetas */
+    div[data-testid="stVerticalBlock"] > div[data-testid="stHorizontalBlock"] {
+        background-color: #ffffff;
+        border-radius: 12px;
+        padding: 15px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        border: 1px solid #f0f0f0;
+        margin-bottom: 15px;
+        align-items: center;
+    }
+
+    /* Títulos de las tarjetas */
+    h3 {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+        font-size: 1.1rem !important;
+        font-weight: 700 !important;
+    }
+
+    /* Botones personalizados */
+    div.stButton > button {
+        width: 100%;
+        border-radius: 8px;
+        font-weight: 600;
+        border: 1px solid #ff4b4b;
+        color: #ff4b4b;
+        background-color: transparent;
+        transition: all 0.2s;
+    }
+    
+    div.stButton > button:hover {
+        background-color: #ff4b4b;
+        color: white;
+        border-color: #ff4b4b;
+    }
+
+    /* Ocultar elementos innecesarios de Streamlit */
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    header {visibility: hidden;}
     </style>
 """, unsafe_allow_html=True)
 
-# Inicializar session state
+# --- FUNCIONES DE AYUDA ---
+
+@st.cache_data
+def cargar_recetas():
+    """Carga el archivo JSON de recetas."""
+    archivo = 'recetas.json'
+    if not os.path.exists(archivo):
+        st.error(f"No se encuentra el archivo {archivo}")
+        return {}
+    
+    with open(archivo, 'r', encoding='utf-8') as f:
+        try:
+            return json.load(f)
+        except json.JSONDecodeError:
+            st.error("Error al leer el archivo JSON.")
+            return {}
+
+def procesar_imagen(ruta_relativa, tamaño=(300, 300), modo='cover'):
+    """
+    Carga, redimensiona y recorta una imagen para que sea uniforme.
+    Maneja errores si la imagen no existe.
+    """
+    # El JSON tiene rutas tipo "/imagenes/foto.jpg", quitamos la barra inicial
+    ruta_limpia = ruta_relativa.lstrip('/')
+    
+    if os.path.exists(ruta_limpia):
+        try:
+            img = Image.open(ruta_limpia)
+            # ImageOps.fit recorta la imagen al centro para llenar el tamaño sin deformar (aspect ratio cover)
+            if modo == 'cover':
+                img = ImageOps.fit(img, tamaño, method=Image.Resampling.LANCZOS)
+            return img
+        except Exception as e:
+            return None
+    return None
+
+# --- GESTIÓN DE ESTADO (NAVEGACIÓN) ---
 if 'pagina' not in st.session_state:
-    st.session_state.pagina = 'galeria'
+    st.session_state.pagina = 'inicio'
 if 'receta_seleccionada' not in st.session_state:
     st.session_state.receta_seleccionada = None
 
-# Cargar las recetas
-@st.cache_data
-def cargar_recetas():
-    """Carga el archivo de recetas JSON"""
-    ruta_recetas = Path(__file__).parent / "recetas.json"
-    with open(ruta_recetas, "r", encoding="utf-8") as f:
-        return json.load(f)
+def ir_a_detalle(nombre_receta):
+    st.session_state.receta_seleccionada = nombre_receta
+    st.session_state.pagina = 'detalle'
 
-# Obtener ruta de la imagen
-def obtener_ruta_imagen(ruta_relativa):
-    """Obtiene la ruta completa de la imagen"""
-    ruta_relativa = ruta_relativa.lstrip("/")
-    ruta_imagen = Path(__file__).parent / ruta_relativa
-    
-    if ruta_imagen.exists():
-        return str(ruta_imagen)
-    return None
+def ir_a_inicio():
+    st.session_state.pagina = 'inicio'
 
-# Formatear ingredientes recursivamente
-def formatear_ingredientes(ingredientes, nivel=0):
-    """Formatea ingredientes incluyendo los anidados"""
-    resultado = []
+# --- VISTA PRINCIPAL (LISTADO) ---
+def mostrar_inicio(recetas):
+    st.title("📖 Mi Recetario")
     
-    for nombre, detalles in ingredientes.items():
-        if isinstance(detalles, dict):
-            # Verificar si tiene estructura de ingrediente (Cantidad, Unidad)
-            if 'Cantidad' in detalles or 'Unidad' in detalles:
-                cantidad = detalles.get('Cantidad', '')
-                unidad = detalles.get('Unidad', '')
-                
-                if unidad:
-                    texto = f"**{nombre}**: {cantidad} {unidad}"
-                elif cantidad:
-                    texto = f"**{nombre}**: {cantidad}"
-                else:
-                    texto = f"**{nombre}**"
-                
-                resultado.append(('ingrediente', nivel, texto))
-            else:
-                # Es un grupo de ingredientes anidados
-                resultado.append(('titulo', nivel, f"**{nombre}:**"))
-                # Recursión para ingredientes anidados
-                sub_ingredientes = formatear_ingredientes(detalles, nivel + 1)
-                resultado.extend(sub_ingredientes)
-        else:
-            resultado.append(('ingrediente', nivel, f"**{nombre}**: {detalles}"))
+    # Buscador
+    busqueda = st.text_input("🔍 Buscar receta...", placeholder="Ej: Paella, Pollo...")
     
-    return resultado
+    st.write("") # Espaciador
 
-# Página de galería
-def mostrar_galeria(recetas, termino_busqueda=""):
-    """Muestra la galería de recetas en formato de tarjetas"""
-    st.title("🍳 Recetario de Cocina")
-    st.markdown("### Selecciona una receta para ver los detalles")
-    
-    # Campo de búsqueda
-    col1, col2, col3 = st.columns([1, 2, 1])
-    with col2:
-        busqueda = st.text_input(
-            "🔍 Buscar recetas",
-            value=termino_busqueda,
-            placeholder="Escribe el nombre de una receta...",
-            label_visibility="collapsed"
-        )
-    
     # Filtrar recetas
-    if busqueda.strip():
-        recetas_filtradas = {
-            nombre: datos for nombre, datos in recetas.items()
-            if busqueda.lower() in nombre.lower()
-        }
-    else:
-        recetas_filtradas = recetas
-    
-    # Mostrar contador
-    st.markdown(f"**{len(recetas_filtradas)} receta(s) encontrada(s)**")
-    st.markdown("---")
-    
-    # Mostrar recetas en grid
-    if recetas_filtradas:
-        # Crear columnas para el grid (3 por fila)
-        recetas_lista = list(recetas_filtradas.items())
-        num_cols = 3
-        
-        for i in range(0, len(recetas_lista), num_cols):
-            cols = st.columns(num_cols)
-            
-            for j in range(num_cols):
-                idx = i + j
-                if idx < len(recetas_lista):
-                    nombre, datos = recetas_lista[idx]
-                    
-                    with cols[j]:
-                        # Contenedor de la tarjeta
-                        with st.container():
-                            # Imagen
-                            ruta_imagen = obtener_ruta_imagen(datos.get("imagen", ""))
-                            if ruta_imagen:
-                                st.image(ruta_imagen, width='stretch')
-                            else:
-                                st.info("Sin imagen")
-                            
-                            # Título de la receta
-                            st.markdown(f'<div class="recipe-card-title">{nombre}</div>', unsafe_allow_html=True)
-                            
-                            # Botón para ver detalles
-                            if st.button(f"Ver receta", key=f"btn_{nombre}", width='stretch'):
-                                st.session_state.receta_seleccionada = nombre
-                                st.session_state.pagina = 'detalle'
-                                st.rerun()
-                        
-                        st.markdown("<br>", unsafe_allow_html=True)
-    else:
-        st.info("🔍 No se encontraron recetas. Intenta con otra búsqueda.")
+    items_recetas = list(recetas.items())
+    if busqueda:
+        items_recetas = [
+            (k, v) for k, v in items_recetas 
+            if busqueda.lower() in k.lower()
+        ]
 
-# Página de detalles de receta
-def mostrar_detalle(nombre_receta, datos_receta):
-    """Muestra los detalles completos de una receta"""
-    
-    # Usar componente para ejecutar JavaScript que haga scroll al top
-    import streamlit.components.v1 as components
-    components.html(
-        """
-        <script>
-            window.parent.document.querySelector('section.main').scrollTo(0, 0);
-        </script>
-        """,
-        height=0,
-    )
-    
-    # Botón para volver
-    if st.button("← Volver a la galería", type="secondary"):
-        st.session_state.pagina = 'galeria'
-        st.rerun()
-    
-    st.markdown("---")
-    
-    # Título
-    st.markdown(f'<div class="detail-title">🍽️ {nombre_receta}</div>', unsafe_allow_html=True)
-    
-    # Columnas para layout
-    col_img, col_content = st.columns([1, 1])
-    
-    with col_img:
-        # Imagen
-        ruta_imagen = obtener_ruta_imagen(datos_receta.get("imagen", ""))
-        if ruta_imagen:
-            st.image(ruta_imagen, width='stretch')
-        else:
-            st.warning("⚠️ Imagen no encontrada")
-    
-    with col_content:
-        # Ingredientes
-        st.markdown('<div class="section-header">📝 Ingredientes</div>', unsafe_allow_html=True)
-        
-        if "Ingredientes" in datos_receta:
-            ingredientes_formateados = formatear_ingredientes(datos_receta["Ingredientes"])
-            
-            for tipo, nivel, texto in ingredientes_formateados:
-                if tipo == 'titulo':
-                    st.markdown(texto)
-                else:
-                    # Agregar indentación para ingredientes anidados
-                    indentacion = "  " * nivel
-                    if nivel > 0:
-                        st.markdown(f"{indentacion}• {texto}")
-                    else:
-                        st.markdown(f"• {texto}")
-    
-    # Instrucciones (ancho completo)
-    st.markdown('<div class="section-header">👨‍🍳 Instrucciones</div>', unsafe_allow_html=True)
-    
-    if "Instrucciones" in datos_receta:
-        for i, instruccion in enumerate(datos_receta["Instrucciones"], 1):
-            st.markdown(f"**{i}.** {instruccion}")
-            st.markdown("")
+    if not items_recetas:
+        st.info("No se encontraron recetas con ese nombre.")
+        return
 
-# Función principal
+    # Renderizar lista de recetas
+    for nombre, datos in items_recetas:
+        # Usamos columnas para simular la tarjeta: Texto a la izq, Imagen a la der
+        # En móvil, Streamlit apila las columnas, pero se verá bien igualmente.
+        col_texto, col_img = st.columns([2, 1], gap="small")
+        
+        with col_texto:
+            st.subheader(nombre)
+            
+            # Generar una descripción breve basada en los primeros ingredientes
+            ingredientes_lista = list(datos.get('Ingredientes', {}).keys())
+            descripcion = ", ".join(ingredientes_lista[:4])
+            if len(ingredientes_lista) > 4:
+                descripcion += "..."
+            
+            st.caption(f"{descripcion}")
+            
+            # Botón "Ver más"
+            # Usamos un callback para cambiar el estado sin recargar toda la lógica desde cero
+            st.button(
+                "Ver receta", 
+                key=f"btn_{nombre}", 
+                on_click=ir_a_detalle, 
+                args=(nombre,)
+            )
+
+        with col_img:
+            # Procesamos la imagen para que sea un cuadrado perfecto (thumbnail)
+            imagen = procesar_imagen(datos.get('imagen', ''), tamaño=(200, 200))
+            if imagen:
+                st.image(imagen, width='stretch')
+            else:
+                # Placeholder si no hay imagen
+                st.markdown(
+                    """<div style="height:100px; background-color:#f0f0f0; 
+                    display:flex; align-items:center; justify-content:center; 
+                    border-radius:8px; color:#aaa;">Sin Foto</div>""", 
+                    unsafe_allow_html=True
+                )
+
+# --- VISTA DETALLE ---
+def mostrar_detalle(recetas):
+    nombre = st.session_state.receta_seleccionada
+    datos = recetas.get(nombre)
+    
+    if not datos:
+        st.error("Receta no encontrada.")
+        if st.button("Volver"): ir_a_inicio()
+        return
+
+    # Botón flotante o superior para volver
+    st.button("⬅️ Volver al listado", on_click=ir_a_inicio)
+    
+    st.title(nombre)
+    
+    # Imagen principal (Grande)
+    imagen = procesar_imagen(datos.get('imagen', ''), tamaño=(800, 500), modo='cover')
+    if imagen:
+        st.image(imagen, width='stretch')
+    
+    st.divider()
+    
+    # Layout de Ingredientes y Pasos
+    # En móvil se verán uno debajo del otro. En escritorio usamos tabs para ahorrar espacio
+    tab1, tab2 = st.tabs(["🛒 Ingredientes", "👨‍🍳 Elaboración"])
+    
+    with tab1:
+        st.write("#### Lo que necesitas:")
+        ingredientes = datos.get('Ingredientes', {})
+        for ing, detalle in ingredientes.items():
+            cant = detalle.get('Cantidad', '')
+            unidad = detalle.get('Unidad', '')
+            texto_ing = f"**{ing}**: {cant} {unidad}"
+            st.checkbox(texto_ing, key=f"chk_{nombre}_{ing}")
+
+    with tab2:
+        st.write("#### Paso a paso:")
+        instrucciones = datos.get('Instrucciones', [])
+        for i, paso in enumerate(instrucciones, 1):
+            st.markdown(f"""
+            <div style="background-color:#f9f9f9; color:black; padding:10px; border-radius:8px; margin-bottom:10px; border-left: 4px solid #ff4b4b;">
+                <strong>{i}.</strong> {paso}
+            </div>
+            """, unsafe_allow_html=True)
+
+# --- BLOQUE PRINCIPAL ---
 def main():
     recetas = cargar_recetas()
     
-    # Navegación basada en session state
-    if st.session_state.pagina == 'galeria':
-        mostrar_galeria(recetas)
-    elif st.session_state.pagina == 'detalle' and st.session_state.receta_seleccionada:
-        nombre = st.session_state.receta_seleccionada
-        if nombre in recetas:
-            mostrar_detalle(nombre, recetas[nombre])
-        else:
-            st.error("Receta no encontrada")
-            st.session_state.pagina = 'galeria'
-            st.rerun()
+    if st.session_state.pagina == 'inicio':
+        mostrar_inicio(recetas)
+    elif st.session_state.pagina == 'detalle':
+        mostrar_detalle(recetas)
 
 if __name__ == "__main__":
     main()
