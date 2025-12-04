@@ -12,7 +12,6 @@ st.set_page_config(
 )
 
 # --- ESTILOS CSS PERSONALIZADOS (MOBILE FIRST) ---
-# Esto ajusta los márgenes, bordes y hace que los botones se vean mejor en móvil
 st.markdown("""
     <style>
     /* Ajustes generales para móvil */
