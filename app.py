@@ -149,15 +149,6 @@ def mostrar_inicio(recetas):
                 descripcion += "..."
             
             st.caption(f"{descripcion}")
-            
-            # Botón "Ver más"
-            # Usamos un callback para cambiar el estado sin recargar toda la lógica desde cero
-            st.button(
-                "Ver receta", 
-                key=f"btn_{nombre}", 
-                on_click=ir_a_detalle, 
-                args=(nombre,)
-            )
 
         with col_img:
             # Procesamos la imagen para que sea un cuadrado perfecto (thumbnail)
@@ -172,6 +163,17 @@ def mostrar_inicio(recetas):
                     border-radius:8px; color:#aaa;">Sin Foto</div>""", 
                     unsafe_allow_html=True
                 )
+
+        # Botón "Ver más"
+        # Usamos un callback para cambiar el estado sin recargar toda la lógica desde cero
+        st.button(
+            "Ver receta", 
+            key=f"btn_{nombre}", 
+            on_click=ir_a_detalle, 
+            args=(nombre,)
+        )
+
+        st.write("")  # Salto de línea
 
 # --- VISTA DETALLE ---
 def mostrar_detalle(recetas):
