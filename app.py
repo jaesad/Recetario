@@ -6,7 +6,7 @@ from PIL import Image, ImageOps
 # Configuración de la página (Título y layout)
 st.set_page_config(
     page_title="Mi Recetario",
-    page_icon="🍳",
+    page_icon="https://raw.githubusercontent.com/tu_usuario/tu_repo/main/logo_cocina.png",
     layout="centered",
     initial_sidebar_state="collapsed"
 )
